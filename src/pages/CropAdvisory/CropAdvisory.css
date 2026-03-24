@@ -1,0 +1,441 @@
+.advisory-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.advisory-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: white;
+  color: var(--neutral-600);
+  border: 1px solid var(--neutral-200);
+  transition: all 0.2s;
+}
+
+.advisory-tab:hover { border-color: var(--primary); }
+
+.advisory-tab.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* Crop Calendar */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.crop-card { padding: 24px; }
+
+.crop-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.crop-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--primary-50);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crop-card-header h4 {
+  font-size: 1.063rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.crop-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.crop-label {
+  display: block;
+  font-size: 0.688rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--neutral-400);
+  margin-bottom: 2px;
+}
+
+.crop-value {
+  font-size: 0.813rem;
+  color: var(--neutral-700);
+  font-weight: 500;
+}
+
+.crop-tips {
+  font-size: 0.813rem;
+  color: var(--neutral-600);
+  line-height: 1.6;
+  padding: 14px;
+  background: var(--neutral-50);
+  border-radius: var(--radius-md);
+  margin-bottom: 12px;
+}
+
+.crop-tips strong {
+  color: var(--neutral-700);
+}
+
+.crop-best-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.813rem;
+  color: var(--success);
+  padding-top: 12px;
+  border-top: 1px solid var(--neutral-100);
+}
+
+/* Market Insights */
+.market-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.market-card { padding: 24px; }
+
+.market-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.market-card-header h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.market-trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.market-trend.up { color: var(--success); }
+.market-trend.down { color: var(--error); }
+
+.market-prices {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.market-label {
+  display: block;
+  font-size: 0.688rem;
+  text-transform: uppercase;
+  color: var(--neutral-400);
+  margin-bottom: 4px;
+}
+
+.market-current {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.market-last {
+  font-size: 1rem;
+  color: var(--neutral-500);
+  text-decoration: line-through;
+}
+
+.market-forecast {
+  font-size: 0.813rem;
+  color: var(--neutral-600);
+  line-height: 1.6;
+  padding-top: 14px;
+  border-top: 1px solid var(--neutral-100);
+}
+
+/* Weather */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.weather-card { padding: 24px; }
+
+.weather-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.weather-card-header h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.weather-condition {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--neutral-500);
+  background: var(--neutral-100);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.weather-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.weather-stats div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--neutral-700);
+}
+
+.weather-advisory {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 14px;
+  background: #fef3c7;
+  border-radius: var(--radius-md);
+  font-size: 0.813rem;
+  color: #92400e;
+  line-height: 1.5;
+}
+
+/* Nearby Map Styles */
+.nearby-controls {
+  margin-bottom: 24px;
+}
+
+.radius-control {
+  background: white;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.radius-control label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--neutral-600);
+  margin-bottom: 12px;
+}
+
+.radius-slider {
+  width: 100%;
+  accent-color: var(--primary);
+  height: 6px;
+  cursor: pointer;
+}
+
+.radius-marks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.688rem;
+  color: var(--neutral-400);
+  margin-top: 6px;
+}
+
+.nearby-map {
+  background: white;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.nearby-map-visual {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 30%, #fffde7 60%, #e3f2fd 100%);
+  min-height: 280px;
+  position: relative;
+  padding: 32px;
+}
+
+.map-center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 5;
+}
+
+.map-center-dot svg {
+  color: #2563eb;
+}
+
+.map-center-dot span {
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #2563eb;
+  background: white;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.map-farmer-pin {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  color: var(--primary);
+}
+
+.map-farmer-pin:hover,
+.map-farmer-pin.selected {
+  transform: scale(1.3);
+  color: var(--secondary);
+  z-index: 10;
+}
+
+.pin-label {
+  font-size: 0.563rem;
+  font-weight: 600;
+  background: white;
+  padding: 1px 6px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+.nearby-list h3 {
+  font-size: 1.063rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.nearby-farmer-card {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.nearby-farmer-card.highlighted {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.nearby-farmer-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.nearby-farmer-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.nearby-farmer-header h4 {
+  font-size: 0.938rem;
+  font-weight: 600;
+}
+
+.nearby-farmer-loc {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--neutral-500);
+}
+
+.nearby-distance {
+  margin-left: auto;
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--primary-50);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.nearby-farmer-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 0.75rem;
+  color: var(--neutral-600);
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.nearby-farmer-stats div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nearby-farmer-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.nearby-product-chip {
+  font-size: 0.688rem;
+  padding: 4px 10px;
+  background: var(--neutral-50);
+  border-radius: var(--radius-full);
+  color: var(--neutral-600);
+}
+
+.nearby-farmer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .calendar-grid,
+  .market-insights-grid,
+  .weather-grid,
+  .nearby-grid {
+    grid-template-columns: 1fr;
+  }
+}

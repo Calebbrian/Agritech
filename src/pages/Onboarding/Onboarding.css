@@ -1,0 +1,30 @@
+.onboarding-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #065f46 100%);
+  padding: 24px;
+}
+.onboarding-card {
+  background: white;
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+.onboarding-logo { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--primary); font-size: 1.25rem; font-weight: 800; margin-bottom: 32px; }
+.onboarding-dots { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
+.onboarding-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--neutral-200); transition: all 0.3s; }
+.onboarding-dot.active { background: var(--primary); width: 28px; border-radius: 5px; }
+.onboarding-dot.done { background: var(--primary-300); }
+.onboarding-content { margin-bottom: 40px; }
+.onboarding-icon { color: var(--primary); margin-bottom: 24px; }
+.onboarding-content h2 { font-size: 1.5rem; font-weight: 800; color: var(--neutral-900); margin-bottom: 12px; }
+.onboarding-content p { font-size: 0.938rem; color: var(--neutral-600); line-height: 1.7; }
+.onboarding-actions { display: flex; gap: 12px; justify-content: center; }
+.onboarding-actions .btn { min-width: 120px; }
+.onboarding-skip { background: none; border: none; color: var(--neutral-400); font-size: 0.813rem; margin-top: 20px; cursor: pointer; }
+.onboarding-skip:hover { color: var(--neutral-600); }

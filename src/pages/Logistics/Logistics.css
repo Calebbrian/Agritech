@@ -1,0 +1,133 @@
+/* Logistics-specific styles */
+.section-title {
+  font-size: 1.063rem;
+  font-weight: 700;
+  color: var(--neutral-800);
+  margin-bottom: 20px;
+}
+
+.deliveries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.deliveries-list .section-title {
+  margin-top: 8px;
+}
+
+.delivery-card {
+  padding: 24px;
+}
+
+.delivery-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.delivery-card-header h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--neutral-800);
+  margin-bottom: 4px;
+}
+
+/* Route visualization */
+.delivery-route {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.route-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.route-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  z-index: 1;
+}
+
+.pickup .route-dot {
+  background: var(--primary);
+}
+
+.dropoff .route-dot {
+  background: var(--secondary);
+}
+
+.route-line {
+  position: absolute;
+  left: -19px;
+  top: 16px;
+  bottom: calc(100% - 52px);
+  width: 2px;
+  height: 24px;
+  background: var(--neutral-300);
+}
+
+.route-label {
+  display: block;
+  font-size: 0.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--neutral-400);
+  margin-bottom: 2px;
+}
+
+.route-address {
+  font-size: 0.875rem;
+  color: var(--neutral-700);
+}
+
+.route-point.pickup {
+  margin-bottom: 16px;
+}
+
+.delivery-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--neutral-100);
+  margin-bottom: 16px;
+}
+
+.delivery-meta {
+  display: flex;
+  gap: 20px;
+}
+
+.delivery-meta div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.813rem;
+  color: var(--neutral-500);
+}
+
+.delivery-fee {
+  font-size: 0.938rem;
+  color: var(--neutral-600);
+}
+
+.delivery-fee strong {
+  color: var(--primary);
+  font-size: 1.063rem;
+}
+
+.delivery-actions {
+  display: flex;
+  gap: 8px;
+}
