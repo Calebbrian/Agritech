@@ -7,8 +7,10 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
 
-    DATABASE_URL: str = "sqlite+aiosqlite:///./farmlink.db"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./farmlink.db"  # Override with PostgreSQL in production
     DATABASE_URL_SYNC: str = "sqlite:///./farmlink.db"
+
+    FRONTEND_URL: str = "http://localhost:5173"
 
     SECRET_KEY: str = "farmlink-secret-key-change-in-production"
     ALGORITHM: str = "HS256"
